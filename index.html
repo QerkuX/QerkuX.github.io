@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" style="--left:50%; --left-:-50%; --right:50%; --right-:-50%;">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dice</title>
+</head>
+<body>
+    <div class="dice-container">
+    </div>
+    <div class="input-container">
+
+        <!-- Please dont touch this -->
+        <div class="input-item">
+            <div class="input-item-inner-left">
+                <p id="amountText">3</p>
+            </div>
+            <input type="range" id="amount" min="1" max="5">
+        </div>
+
+        <div class="input-item"><button onclick="roll()" id="rollButton">Roll the Die</button></div>
+
+        <div class="input-item">
+            <div class="input-item-inner-right">
+                <p id="typeText">6</p>
+            </div>
+            <input type="range" id="type" min="3" max="9">
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
